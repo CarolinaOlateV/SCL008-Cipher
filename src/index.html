@@ -6,8 +6,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>Cifrado Cesar</header>
     <div id="root">
-      <h1>Hola mundo!</h1>
+    </div>
+    <div id="pagUno">
+        <h1>¡Bienvenid@s! te invitamos <br><br>crear tu mensaje secreto</h1>
+        <p>Para comenzar haz click en el boton de Comenzar</p>
+        <button id="btnIngresar">Comenzar</button> <br>
+    </div>
+    <div id="pagDos">
+        <h2>Ingresa el numero de desplazamiento</h2>
+        <textarea placeholder="Insertar mensaje" id="mensaje" rows="3" cols="50"></textarea>
+        <button id="btnEncode">Cifrar</button> 
+        <button id="btnDecode">Descifrar</button>
+        <textarea disabled placeholder="Resultado cifrado/descifrado" id="resultado" rows="3" cols="50"></textarea><br>
+        <input type="number" placeholder="Offset" id="numero"> <br><br>
+        
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
