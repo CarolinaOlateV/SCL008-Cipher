@@ -9,16 +9,27 @@
 
 body, header{
     text-align: center;
-    background-image: url(https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/School-Clipart/School_Board_and_Notebook_Background.jpg?m=1439952901);
+    background-image: url(https://st2.depositphotos.com/1594308/7969/i/950/depositphotos_79696428-stock-photo-schoolgirl-cheating-at-lesson.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
 }
 
 header{
-    background: green;
+    background: #F3C6AB;
     color: black;
     height: 50px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
 }
+
+p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+
 
