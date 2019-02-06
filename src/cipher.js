@@ -7,9 +7,12 @@ window.cipher = {
                 let convertedLetter=(asciiNumber- 65 + parseInt(displace))%26 + 65;
                 result += String.fromCharCode(convertedLetter);
             }  
+        else if (asciiNumber === 32) {
+            result += ' ';
         }
-        return result;
+        
     }
-    
+    return result;
+}
 };
   
