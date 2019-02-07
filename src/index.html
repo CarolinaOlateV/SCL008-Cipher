@@ -3,26 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>Cifrado Cesar</header><br>
     <div id="root">
     </div>
-    <div id="pagUno">
+    <div id="pag-uno">
         <h1>¡Bienvenid@s! te invitamos crear tu mensaje secreto</h1><br>
-        <p>Para iniciar <br> haz click en el boton de Comenzar</p><br><br>
-        <button id="btnIngresar">Comenzar</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Instrucciones</button>
+
+<!-- Modal -->
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Como funciona</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Veamos un ejemplo con un desplazamiento de 3 <img src="https://justcodeit.io/wp-content/uploads/2018/08/Cifrado_Cesar_Python.png" alt="Ejemplo de cifrado Cesar">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
     </div>
-    <div id="pagDos">
+    </div>
+   </div>
+        <p>Para iniciar <br> haz click en el boton de Comenzar</p><br><br>
+        <button id="btn-ingresar">Comenzar</button>
+    </div>
+    <!--Inicio segunda pag-->
+    <div id="pag-dos">
         <h2>Ingresa el numero de desplazamiento</h2>
-        <textarea placeholder="Insertar mensaje" id="mensaje" rows="3" cols="50"></textarea>
-        <button id="btnEncode">Cifrar</button> 
-        <button id="btnDecode">Descifrar</button>
-        <textarea placeholder="Resultado cifrado/descifrado" id="resultado" rows="3" cols="50"></textarea><br>
+        <textarea class="form-control" placeholder="Ingresa tu mensaje" id="mensaje" rows="3" cols="50"></textarea>
+        <button id="btn-encode">Cifrar</button> 
+        <button id="btn-decode">Descifrar</button>
+        <textarea class="form-control" placeholder="Resultado Cifrar/Descifrar" id="resultado" rows="3" cols="50"></textarea><br>
         <input type="number" placeholder="Offset" id="numero"> <br><br>
         
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
