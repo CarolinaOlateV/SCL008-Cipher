@@ -3,7 +3,7 @@
     padding: 0%;
 }
 
-#pagDos{
+#pag-dos{
     display: none;
 }
 
@@ -14,6 +14,19 @@ body, header{
     background-attachment: fixed;
     background-position: center;
 
+
+}
+
+#mensaje{
+    width: 40%;
+    height: 80px;
+    margin-top: 9rem;
+}
+
+#resultado{
+    width: 40%;
+    height: 80px;    
+    margin-left: auto;
 }
 
 header{

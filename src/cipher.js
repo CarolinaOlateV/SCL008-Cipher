@@ -2,15 +2,33 @@ window.cipher = {
     encode: (displace, text) => {
         let result = '';
         for(let i=0; i<text.length; i++){
-            let asciiNumber = text.charCodeAt(i);
-            if(asciiNumber >=65 && asciiNumber <=90){
-                let convertedLetter=(asciiNumber- 65 + parseInt(displace))%26 + 65;
-                result += String.fromCharCode(convertedLetter);
+            let ascii = text.charCodeAt(i);
+            if(ascii >=65 && ascii <=90){
+                let converted=(ascii- 65 + parseInt(displace))%26 + 65;
+                result += String.fromCharCode(converted);
             }  
-        else if (asciiNumber === 32) {
+        else if (ascii === 32) {
             result += ' ';
         }
         
+    }
+    return result;
+},
+
+    decode: (displace, text) => {
+        let result = '';
+        for(let i=0; i<text.length; i++){
+            let ascii = text.charCodeAt(i);
+            if(ascii >=65 && ascii <=90){
+                let converted=(ascii- 65 - parseInt(displace))%26 + 65;
+                if (converted <65){
+                    converted +=26;
+            }
+            result += String.fromCharCode(converted);
+        }
+        else if (ascii === 32) {
+            result += ' ';
+        }
     }
     return result;
 }
