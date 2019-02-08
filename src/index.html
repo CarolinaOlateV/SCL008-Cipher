@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Cifrado Cesar</header><br>
+    <header>Respuesta Secreta</header><br>
     <div id="root">
     </div>
     <div id="pag-uno">
@@ -40,11 +40,11 @@
     <!--Inicio segunda pag-->
     <div id="pag-dos">
         <h2>Ingresa el numero de desplazamiento</h2>
+        <input type="number" placeholder="Desplazamiento" id="numero" min="0">
         <textarea class="form-control" placeholder="Ingresa tu mensaje" id="mensaje" rows="3" cols="50"></textarea>
         <button id="btn-encode" class="btn btn-info">Cifrar</button> 
         <button id="btn-decode" class="btn btn-info">Descifrar</button>
-        <textarea class="form-control" placeholder="Resultado Cifrar/Descifrar" id="resultado" rows="3" cols="50"></textarea><br>
-        <input type="number" placeholder="Offset" id="numero"> <br><br>
+        <textarea disabled class="form-control" placeholder="Resultado Cifrar/Descifrar" id="resultado" rows="3" cols="50"></textarea><br>
         
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

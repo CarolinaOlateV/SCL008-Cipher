@@ -19,29 +19,26 @@ body, header{
 
 #mensaje{
     width: 40%;
-    height: 80px;
-    margin-top: 9rem;
+    height: 80%;
+
 }
 
 #resultado{
     width: 40%;
-    height: 80px;    
-    margin-left: auto;
+    height: 80%;    
 }
 
 header{
     background: #F3C6AB;
     color: black;
-    height: 50px;
-    font-size: 20px;
+    height: 100%;
+    font-size: 250%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
 }
 
 p{
-    font-size: 20px;
+    font-size: 150%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
 }
 
 
