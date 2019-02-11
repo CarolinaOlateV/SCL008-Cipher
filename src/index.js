@@ -23,3 +23,9 @@ document.getElementById('btn-decode').addEventListener('click', () =>{
     let result = window.cipher.decode(displace, text);
     document.getElementById('resultado').innerHTML = result;
 })
+
+document.getElementById('btn-start').addEventListener('click', (evento) =>{
+
+    document.getElementById('pag-dos').style.display='none';
+    document.getElementById('pag-uno').style.display='block';
+})
