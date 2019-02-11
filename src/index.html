@@ -5,13 +5,16 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
   </head>
   <body>
     <header>Respuesta Secreta</header><br>
     <div id="root">
     </div>
     <div id="pag-uno">
-        <h1>¡Bienvenid@s! te invitamos crear tu mensaje secreto</h1><br>
+        <h1>¡Bienvenid@s!</h1>
+        <h3>te invitamos crear tu mensaje secreto</h3>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Instrucciones</button>
 
@@ -41,10 +44,14 @@
     <div id="pag-dos">
         <h2>Ingresa el numero de desplazamiento</h2>
         <input type="number" placeholder="Desplazamiento" id="numero" min="0">
+        <div class="text" style="width:500px">
         <textarea class="form-control" placeholder="Ingresa tu mensaje" id="mensaje" rows="3" cols="50"></textarea>
+      </div>
         <button id="btn-encode" class="btn btn-info">Cifrar</button> 
         <button id="btn-decode" class="btn btn-info">Descifrar</button>
+        <div class="result" style="width:500px">
         <textarea disabled class="form-control" placeholder="Resultado Cifrar/Descifrar" id="resultado" rows="3" cols="50"></textarea><br>
+      </div>
         <button id="btn-start" class="btn btn-info">Volver al inicio</button>
         
     </div>

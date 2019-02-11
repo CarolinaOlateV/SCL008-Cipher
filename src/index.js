@@ -25,6 +25,7 @@ document.getElementById('btn-decode').addEventListener('click', () =>{
 })
 
 document.getElementById('btn-start').addEventListener('click', (evento) =>{
+    evento.preventDefault();
 
     document.getElementById('pag-dos').style.display='none';
     document.getElementById('pag-uno').style.display='block';
