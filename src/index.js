@@ -30,3 +30,9 @@ document.getElementById('btn-start').addEventListener('click', (evento) =>{
     document.getElementById('pag-dos').style.display='none';
     document.getElementById('pag-uno').style.display='block';
 })
+
+document.getElementById('btn-reset').addEventListener('click', () =>{
+    document.getElementById('mensaje').value = '';
+    document.getElementById('resultado').value = '';
+    document.getElementById('numero').value = '';
+})
