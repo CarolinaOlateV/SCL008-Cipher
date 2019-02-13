@@ -1,38 +1,38 @@
-document.getElementById('btn-ingresar').addEventListener('click', (evento) =>{
+document.getElementById('btn-come').addEventListener('click', (evento) =>{
     evento.preventDefault();
 
-    document.getElementById('pag-uno').style.display='none';
-    document.getElementById('pag-dos').style.display='block';
+    document.getElementById('one').style.display='none';
+    document.getElementById('two').style.display='block';
 
 })
 
 document.getElementById('btn-encode').addEventListener('click', () =>{
     //evento.preventDefault();
 
-    let text = document.getElementById('mensaje').value;
-    let displace = document.getElementById('numero').value;
+    let text = document.getElementById('message').value;
+    let displace = document.getElementById('numbers').value;
 
     let result = window.cipher.encode(displace, text);
-    document.getElementById('resultado').innerHTML = result;
+    document.getElementById('result').innerHTML = result;
 })
 
 document.getElementById('btn-decode').addEventListener('click', () =>{
-    let text = document.getElementById('mensaje').value;
-    let displace = document.getElementById('numero').value;
+    let text = document.getElementById('message').value;
+    let displace = document.getElementById('numbers').value;
 
     let result = window.cipher.decode(displace, text);
-    document.getElementById('resultado').innerHTML = result;
+    document.getElementById('result').innerHTML = result;
 })
 
 document.getElementById('btn-start').addEventListener('click', (evento) =>{
     evento.preventDefault();
 
-    document.getElementById('pag-dos').style.display='none';
-    document.getElementById('pag-uno').style.display='block';
+    document.getElementById('two').style.display='none';
+    document.getElementById('one').style.display='block';
 })
 
 document.getElementById('btn-reset').addEventListener('click', () =>{
-    document.getElementById('mensaje').value = '';
-    document.getElementById('resultado').value = '';
-    document.getElementById('numero').value = '';
+    document.getElementById('message').value = '';
+    document.getElementById('result').value = '';
+    document.getElementById('numbers').value = '';
 })
